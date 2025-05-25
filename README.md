@@ -1,42 +1,69 @@
 # Full-Stack Todo List Application
 
-## Overview
-This is a full-stack Todo List application developed as part of an SDE-1 Fullstack assessment.  
-The application allows users to manage todos with features including tagging, priority levels, user mentions, notes, pagination, filtering, sorting, and optional export functionality.
+A full-stack Todo List web application with user management, priority tagging, notes, and more — built with **Node.js (Express)** backend, **MongoDB** database, and **vanilla JavaScript** frontend.
 
 ---
 
-## Tech Stack
-- **Backend:** Node.js, Express.js, MongoDB (Mongoose ODM)
-- **Frontend:** React.js (JavaScript)
-- **Other:** dotenv for environment variables, CORS middleware for cross-origin requests
+## Table of Contents
+
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Installation](#installation)  
+  - [Running the Application](#running-the-application)  
+- [API Endpoints](#api-endpoints)  
+- [Project Structure](#project-structure)  
+- [Usage](#usage)  
+- [Future Enhancements](#future-enhancements)  
+- [Contributing](#contributing)  
+- [License](#license)
+
+---
+
+## Project Overview
+
+This project implements a Todo List application where multiple users can add, edit, delete, and manage todos with features like priority levels, tagging, notes, and user assignment. The backend exposes RESTful APIs to perform CRUD operations, and the frontend consumes these APIs with fetch calls to present a responsive UI.
 
 ---
 
 ## Features
-- Create, read, update, and delete todos
-- Tag users using `@username` mentions
-- Assign priority levels: High, Medium, Low
+
+- User switching (simulate multiple users)
+- Add, edit, delete todos
+- Assign todos to multiple users
+- Set priority: low, medium, high
 - Add notes to todos
-- Filter todos by tag, priority, or assigned user
-- Sort todos by creation date or priority
-- Pagination support for efficient list viewing
-- Export todos as JSON or CSV (optional)
-- User management with pre-created users for validation (optional)
+- Mark todos as completed
+- Filter todos by user and priority (to be implemented)
+- Responsive UI with simple, clean design
 
 ---
 
-## Setup and Installation
+## Tech Stack
+
+- **Backend:** Node.js, Express.js, MongoDB (Mongoose ODM)
+- **Frontend:** HTML, CSS, JavaScript (Vanilla JS)
+- **Others:** Fetch API for frontend-backend communication
+
+---
+
+## Getting Started
 
 ### Prerequisites
-- Node.js (v14+ recommended)
-- npm (comes with Node.js)
-- MongoDB instance (local or cloud-based like MongoDB Atlas)
+
+- Node.js (v14 or later recommended)
+- MongoDB running locally or MongoDB Atlas cloud DB
+- Git (optional but recommended)
 
 ---
 
-### Backend Setup
+### Installation
 
-1. Navigate to the backend folder (if backend and frontend are separate):
+1. Clone the repository:
+
    ```bash
-   cd backend
+   git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/jyoti-ranj/reference)
+   cd reference
+
